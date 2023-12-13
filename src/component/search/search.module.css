@@ -1,0 +1,15 @@
+.searchwrap{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.count{
+    display: block;
+    text-align: center;
+    padding:10px 0;
+    font-weight: 600;
+}
+.count i{
+    font-style: normal;
+    color:#6ac045;
+}

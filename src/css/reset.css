@@ -1,0 +1,694 @@
+/****** Reset CSS ******/
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Roboto",
+    sans-serif, "Segoe UI", Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  overflow-y: scroll;
+  letter-spacing: 0.2px;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+body,
+div,
+span,
+p,
+img,
+small,
+strong,
+b,
+i,
+ol,
+ul,
+figure,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+input::-ms-clear {
+  display: none;
+}
+table {
+  width: 100%;
+  margin: 15px 0;
+  border-collapse: collapse;
+}
+
+table tr th,
+table tr td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+table tr th {
+  color: #575757;
+  font-weight: normal;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* IOS User Icon showing saferi */
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+/**** Grid Systems ****/
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+[class^="span"] {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.span12 {
+  width: 100%;
+}
+
+.span11 {
+  width: 91.66666667%;
+}
+
+.span10 {
+  width: 83.33333333%;
+}
+
+.span9 {
+  width: 75%;
+}
+
+.span8 {
+  width: 66.66666667%;
+}
+
+.span7 {
+  width: 58.33333333%;
+}
+
+.span6 {
+  width: 50%;
+}
+
+.span5 {
+  width: 41.66666667%;
+}
+
+.span4 {
+  width: 33.33333333%;
+}
+
+.span3p5 {
+  width: 29.16666667%;
+}
+
+.span3 {
+  width: 25%;
+}
+
+.span2p5 {
+  width: 20.83333333%;
+}
+
+.span2 {
+  width: 16.66666667%;
+}
+
+.span1p5 {
+  width: 12.5%;
+}
+
+.span1 {
+  width: 8.33333333%;
+}
+
+.row.form-fields {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.row.form-fields > [class^="span"] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/**** end of grid ****/
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 10px;
+  padding: 0;
+  outline: 0;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+}
+
+em {
+  font-style: normal;
+}
+iframe {
+  border: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0060ff;
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: 0;
+  resize: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  margin: -2px 5px 0 0;
+  vertical-align: middle;
+}
+[class*="btn-"] {
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px;
+  margin-right: 2px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 2px;
+  color: #fff;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+button {
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  background-color: #666;
+}
+.btn-large {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 10px 20px;
+}
+
+.btn-p {
+  font-size: 16px;
+  background-color: #e53935;
+}
+/* Misc style */
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.visible-xs {
+  display: none;
+}
+
+.hidden-xs {
+  display: block;
+}
+
+small {
+  font-size: 12px;
+  color: #787878;
+  font-weight: 300;
+}
+/** Form style **/
+input[type="text"],
+.title-case {
+  text-transform: capitalize;
+}
+
+input[type="text"].txtlcfmail {
+  text-transform: none;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea,
+.input,
+.sl-field {
+  width: 100%;
+  padding: 7px 15px;
+  border: 1px solid #bec8d4;
+  background-color: #fff;
+  border-radius: 2px;
+  outline: 0;
+  color: #4d4d4d;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+  vertical-align: top;
+}
+.form-group {
+  position: relative;
+  padding-bottom: 15px;
+}
+.input {
+  position: relative;
+  cursor: pointer;
+  color: #4d4d4d;
+}
+
+.input > a,
+.input:hover,
+.input:focus {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.input > span {
+  font-weight: 600;
+}
+
+.input .placeholder {
+  font-weight: normal;
+}
+
+.placeholder,
+a.placeholder,
+.placeholder:hover,
+.placeholder:focus {
+  color: #666666;
+}
+.sdropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.sdropdown .sd-link {
+  display: block;
+}
+.sdropdown .sd-menu,
+.ac-menu,
+.popover {
+  display: none;
+}
+/* Checkbox and radio button style */
+
+.radio label,
+.checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  margin: 8px 0;
+  padding-left: 32px;
+}
+
+input[disabled][type="radio"] + label,
+input[disabled][type="radio"]:checked + label,
+input[disabled][type="checkbox"] + label,
+input[disabled][type="checkbox"]:checked + label {
+  opacity: 0.5;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+.radio label:before,
+.checkbox label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 1px;
+}
+
+.ie8 input[type="checkbox"],
+.ie8 input[type="radio"] {
+  display: inline-block;
+}
+
+.ie8 .radio label:before,
+.ie8 .checkbox label:before {
+  display: none;
+}
+
+.ie8 .radio label,
+.ie8 .checkbox label {
+  padding-left: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #dddddd;
+  border-left: 0;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c8c8c8;
+  border: 2px solid #fff;
+  border-left: 0;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border: 2px solid #fff;
+  border-left: 0;
+}
+
+.button[class*="line-"].disabled,
+.button[class*="line-"]:disabled {
+  border: 1px solid #bdbbbb !important;
+  background: none !important;
+}
+
+.button.primary {
+  background: #e53935;
+  border: 1px solid #e53935;
+  color: #fff;
+}
+
+.button.primary:hover {
+  border: 1px solid #e53935;
+  color: #e53935 !important;
+  background-color: #fff;
+}
+
+.button.gray {
+  background: #666;
+  color: #fff;
+}
+
+.button.gray:hover {
+  background: #666;
+}
+
+.button.orange {
+  background: #ff9c00;
+  color: #fff;
+}
+
+.button.orange:hover {
+  background: #ff7e00;
+}
+
+.button.yellow {
+  background: #f9b719;
+  color: #000;
+}
+
+.button.yellow:hover {
+  background: #f9b719;
+}
+
+.button.white {
+  color: #e53935;
+}
+
+.button.link {
+  color: #0060ff;
+  box-shadow: none;
+  background: 0 0;
+}
+
+.button.link.single {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0;
+}
+
+.button.line-primary {
+  border: 1px solid #e53935;
+  color: #e53935;
+}
+
+.button.line-primary:hover {
+  border: 1px solid #e53935;
+}
+
+.button.line-secondary {
+  border: 1px solid #d2d2d2;
+  color: #e53935;
+}
+
+.button.line-secondary:hover {
+  border: 1px solid #d2d2d2;
+}
+
+.button.line-gray {
+  border: 1px solid #666;
+  color: #666;
+}
+
+.button.line-gray:hover {
+  border: 1px solid #666;
+}
+
+.button.line-orange {
+  border: 1px solid #ff7e00;
+  color: #ff7e00;
+}
+
+.button.line-orange:hover {
+  border: 1px solid #ff7e00;
+}
+
+.button.line-yellow {
+  border: 1px solid #f9b719;
+  color: #f9b719;
+}
+
+.button.line-yellow:hover {
+  border: 1px solid #f9b719;
+}
+
+.button.line-white {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+.button.line-white:hover {
+  border: 1px solid #fff;
+}
+
+.button.line-link {
+  border: 1px solid #0060ff;
+  color: #0060ff;
+  background-color: transparent;
+}
+
+.button.line-link:hover {
+  border: 1px solid #0060ff;
+}
+
+.button.xlarge {
+  padding: 0 22px;
+  font-size: 20px;
+  height: 56px;
+  line-height: 56px;
+}
+
+.button.large {
+  padding: 0 22px;
+  font-size: 16px;
+  height: 56px;
+  line-height: 56px;
+}
+
+.button.medium {
+  font-size: 14px;
+  height: 42px;
+  line-height: 42px;
+}
+
+.button.small {
+  padding: 4px 18px;
+  line-height: 28px;
+}
+
+.button.xsmall {
+  padding: 0 8px;
+  font-size: 11px;
+  height: 24px;
+  line-height: 20px;
+}
+
+.btn-group {
+  position: relative;
+  vertical-align: middle;
+  font-size: 0;
+  margin-top: 20px;
+}
+
+.btn-group .button.block {
+  width: 100%;
+  margin: 0;
+}
+
+.btn-group .button {
+  margin: 0 5px;
+}
+
+.btn-group.block {
+  width: 100%;
+}
+
+.btn-group.align-left .button:first-child {
+  margin-left: 0;
+}
+
+.btn-group.align-left .button:last-child {
+  margin-right: 0;
+}
+
+.btn-group.align-right .button:first-child {
+  margin-left: 0;
+}
+
+.btn-group.align-right .button:last-child {
+  margin-right: 0;
+}
+
+.button [class^="hub-"] {
+  font-size: 100%;
+  vertical-align: middle;
+  line-height: inherit;
+}
+
+.button.float {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 56px;
+  height: 56px;
+  line-height: 55px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.button.float.medium {
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0;
+  font-size: 14px;
+}
+
+.button.float.large {
+  width: 48px;
+  height: 48px;
+  line-height: 47px;
+  padding: 0;
+  font-size: 18px;
+}
+
+.button .icon-left {
+  margin-right: 10px;
+}
+
+.button .icon-right {
+  margin-left: 10px;
+}
+
+.stopscroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loading {
+  width: 170px;
+  margin: 10% auto;
+}
