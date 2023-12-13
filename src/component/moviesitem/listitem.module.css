@@ -1,0 +1,75 @@
+.item{
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 7px 1px #ddd;
+    cursor: pointer;
+    display: inline-block;
+    width: 23.85%;
+    margin-right: 15px;
+    vertical-align: top;
+}
+.item:nth-child(4n){
+    margin-right: 0;
+}
+.item h1{
+    display: block;
+    padding: 10px 0;
+    white-space: nowrap;
+    text-overflow:ellipsis ;
+    overflow: hidden;
+}
+.item:nth-child(4n){
+    margin: 0;
+}
+.item figure{
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: 250px;
+    overflow: hidden;
+}
+.item figure img{
+    width: 100%;
+}
+.short span {
+    display: inline-block;
+    margin-right: 20px;
+}
+@media(max-width:1270px){
+    .item{
+        width: 23.5%;
+    }
+}
+
+@media(max-width:1023px){
+    .item{
+        width:31.5%
+    }
+    .item:nth-child(4n){
+        margin-right: 15px;
+    }
+    .item:nth-child(3n){
+        margin-right: 0;
+    }
+}
+@media(max-width:780px){
+    .item{
+        width:48%
+    }
+    .item:nth-child(3n){
+        margin-right: 15px;
+    }
+    .item:nth-child(2n){
+        margin-right: 0;
+    }
+}
+@media(max-width:500px){
+    .item{
+        width: 100%;
+        margin: 0;
+    }
+    .item:nth-child(3n){
+        margin-right: 0;
+    }
+}

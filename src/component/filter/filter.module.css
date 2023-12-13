@@ -1,0 +1,14 @@
+
+.filterlist li{
+    cursor: pointer;
+    display: block;
+    padding: 2px 10px;
+}
+.filterlist li:hover{
+    background-color: #dfdfdf;
+}
+.filterlist ul{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+}

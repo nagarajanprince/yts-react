@@ -1,0 +1,49 @@
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;    
+    padding: 20px;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+.search{
+    padding: 70px 30%;
+    margin-bottom: 40px;
+}
+
+.filter{
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-right: 15px;
+}
+.listings{
+    width: calc(100% - 220px);
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media(max-width:780px){
+    .search{
+        padding: 20px;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+    }
+    .container{
+        padding-top: 100px;
+        position: relative;
+    }
+    .filter{
+        display: none;
+    }    
+    .listings{
+        width: 100%;
+    }
+}
