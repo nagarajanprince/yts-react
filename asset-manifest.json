@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yts-react/static/css/main.b13e2d77.css",
+    "main.js": "/yts-react/static/js/main.df3ce150.js",
+    "static/js/787.2f7da387.chunk.js": "/yts-react/static/js/787.2f7da387.chunk.js",
+    "static/media/loading.gif": "/yts-react/static/media/loading.10c22b05b0fd8d5bc0e2.gif",
+    "index.html": "/yts-react/index.html",
+    "main.b13e2d77.css.map": "/yts-react/static/css/main.b13e2d77.css.map",
+    "main.df3ce150.js.map": "/yts-react/static/js/main.df3ce150.js.map",
+    "787.2f7da387.chunk.js.map": "/yts-react/static/js/787.2f7da387.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b13e2d77.css",
+    "static/js/main.df3ce150.js"
+  ]
+}
