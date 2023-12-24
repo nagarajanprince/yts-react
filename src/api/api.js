@@ -17,7 +17,6 @@ export const fetchYtsData = async () => {
 export const fetcYtsMovies = async (searchdata, filterData, page) => {
   let pagenumber = 1;
   let genre = "";
-  console.log(filterData);
   if (page) {
     pagenumber = page;
   }
